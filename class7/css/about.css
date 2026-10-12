@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    background: green;
+     border: 2px solid black;
+}
+
+.main-container{
+    padding: 40px;
+    width: 1140px;
+    margin: auto;
+}
+
+.sbox{
+    display: flex;
+}
+
+.info-side{
+    width: 600px;
+    padding: 14px;
+}
+
+.image-side{
+    width: 400px;
+}
+
+.info-side h2{
+    margin-bottom: 24px;
+}
+
+
+
