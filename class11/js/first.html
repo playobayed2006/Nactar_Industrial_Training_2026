@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="head_p"><span style="color: blue;">hello grom paragraph</span></p>
+    <script>
+        document.write("Hello World")
+        console.log("Hello from log")
+
+        // document.getElementById("head_p").innerText = "chagedd"
+        
+        let p1 = document.getElementById("head_p").innerHTML
+        let p2 = document.getElementById("head_p").innerText
+
+        p1 = "<span style='color: green;'>color change</span>"
+
+        console.log(p1)
+        console.log(p2)
+
+        document.write(p1)
+        
+        document.write("stying color with javascript")
+    
+    
+    </script>
+</body>
+</html>
