@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Third Page</h1>
+    
+    <label for="uemail">Enter Email</label>
+    <input type="text" name="uemail" id="uemail">
+
+    <br>
+
+    <label for="upwd">Enter Password</label>
+    <input type="text" name="upwd" id="upwd">
+
+    <br>
+
+    <button type="submit" onclick="loginFunc()">Login</button>
+ 
+
+    <script>
+        function loginFunc(){
+
+            dbEmail = "123"
+            dbPwd = "123"
+
+
+            let email = document.getElementById("uemail").value
+            let pwd = document.getElementById("upwd").value 
+
+            if (email == "" || pwd == ""){
+                window.alert("Please Input Correctly")
+            } else if ((email == dbEmail) && (pwd == dbPwd)){
+                window.alert("Login Successfully")
+                window.location.href = "conditional.html"
+            } else{
+                window.alert("Invalid Credentials")
+            }
+        }
+    </script>
+</body>
+</html>

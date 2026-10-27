@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">subject 1</label>
+    <input type="number" name="" id="sub1"> <br>
+
+    <label for="">subject 2</label>
+    <input type="number" name="" id="sub2"> <br>
+
+    <label for="">subject 3</label>
+    <input type="number" name="" id="sub3"> <br>
+
+    <label for="">subject 4</label>
+    <input type="number" name="" id="sub4"> <br>
+
+    <label for="">subject 5</label>
+    <input type="number" name="" id="sub5"> <br>
+
+    <button onclick="resultFun()">Result</button>
+
+
+    <script>
+        function resultFun() {
+            let sub1 = parseInt(document.getElementById("sub1").value)
+            let sub2 = parseInt(document.getElementById("sub1").value)
+            let sub3 = parseInt(document.getElementById("sub1").value)
+            let sub4 = parseInt(document.getElementById("sub1").value)
+            let sub5 = parseInt(document.getElementById("sub1").value)
+
+            let avg = sub1+sub2+sub3+sub4+sub5/5
+
+            window.alert("average is: " + avg)
+
+            if(avg > 80){
+                window.alert("A+")
+            } else if (avg > 50) {
+                window.alert("B+")
+            } else{
+                window.alert("C+")
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

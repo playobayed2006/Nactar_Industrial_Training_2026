@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Subject Number</label>
+    <input type="number" id="sub1">
+
+    <button onclick="result()">Result</button>
+
+    <script>
+        function result(){
+            let gpa = parseInt(document.getElementById("sub1").value)
+            console.log(typeof gpa)
+            switch(gpa){
+                case 100:
+                    window.alert("a+")
+                    break
+                case 50:
+                    window.alert("b+")
+                    break
+                default:
+                    window.alert("fail")
+                    break
+            }
+
+        }
+    </script>
+</body>
+</html>

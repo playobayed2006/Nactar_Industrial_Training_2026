@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Second page</h1>
+
+    <label for="number1">Enter Number 1</label>
+    <input type="text" name="number1" id="number1">
+
+    <label for="number1">Enter Number 2</label>
+    <input type="text" name="number2" id="number2">
+    <button onclick="actionfun()">submit</button>
+
+
+    <script>
+       
+        function actionfun(){
+
+            let n1 = parseInt(document.getElementById("number1").value)
+            let n2 = parseInt(document.getElementById("number2").value)
+
+            if (n1 == n2){
+                window.alert("both are equal")
+            } else if (n1 > n2){
+                window.alert(n1 + " is greater")
+            } else{
+                window.alert(n2 + " is greater")
+            }
+
+        }
+
+    </script>
+</body>
+</html>
