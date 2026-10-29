@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        .card-container{
+            display: inline-block;
+            width: 400px;
+            height: 200px;
+            margin: 8px;
+            border: 4 px solid black;
+            text-align: center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <script>
+
+        let names = ["konok", "akash", "mizan", "sohan", "mirjafor"]
+
+        let cardStart = "<div class='card-container'>"
+        let cardEnd = "</div>"
+
+
+        for (let index = 0; index < 5; index++) {
+            document.write(cardStart+names[index]+cardEnd)
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #parent{
+            border: 1px solid black;
+        }
+
+        #parent td, th{
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table id="parent" cellspacing="0">
+        <tr>
+            <th>Name</th>
+            <th>Roll</th>
+            <th>Status</th>
+            <th>Image</th>
+        </tr>
+    </table>
+
+    <script>
+        let ptable = document.getElementById("parent")
+
+        let students = [
+            { name: "Mizan", roll: 12, status: "regular",photo:"1.png" },
+            { name: "kuddus", roll: 13, status: "regular",photo:"1.png" },
+            { name: "talha", roll: 12, status: "irregular",photo:"1.png" },
+            { name: "nigaz", roll: 12, status: "regular",photo:"1.png" },
+            { name: "khatabus", roll: 12, status: "regular",photo:"1.png" },
+        ]
+
+
+        for (let index = 0; index < students.length; index++) {
+            
+            let tr = document.createElement("tr");
+            tr.innerHTML = 
+                "<td>" + students[index].name + "</td>" +
+                "<td>" + students[index].roll + "</td>" +
+                "<td>" + students[index].status + "</td>" +
+                "<td><img src='" + students[index].photo + "' width='60'></td>";
+
+            ptable.appendChild(tr);
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #container{
+            display: flex;
+        }
+
+        .card-container{
+            /* display: inline-block; */
+            width: 400px;
+            height: 200px;
+            margin: 8px;
+            border: 4px solid black;
+            text-align: center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div id="container">
+
+    </div>
+
+    <script>
+
+        let container = document.getElementById("container")
+
+        let names = ["konok", "akash", "mizan", "sohan", "mirjafor", "kuddus ali"]
+
+
+        for (let index = 0; index < names.length; index++) {
+
+            let div = document.createElement("div")
+            div.className = "card-container fojlu"
+
+            let head = document.createElement("h3")
+            head.textContent = names[index]
+
+            let status = document.createElement("button")
+            status.style = "color:green; border: 1px solid blue; padding: 12px"
+            status.textContent = "Student"
+
+            
+            div.appendChild(head)
+            div.appendChild(status)
+            container.appendChild(div)
+        }
+
+    </script>
+</body>
+</html>
