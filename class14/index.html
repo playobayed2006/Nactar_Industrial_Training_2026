@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <section id="student-input-section" class="scontainer">
+        <h1>Student Result Management System</h1>
+
+        <br><br>
+
+        <div>
+            <fieldset>
+                <label for="sname">Enter Student Name</label>
+                <input type="text" id="sname" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <h2>Enter Subject Marks</h2>
+
+                <label for="">Bangla Subject</label>
+                <input type="number" id="bangla">
+
+                <label for="">English Subject</label>
+                <input type="number" id="english">
+
+                <label for="">Mathematics Subject</label>
+                <input type="number" id="math">
+
+                <label for="">Science Subject</label>
+                <input type="number" id="science">
+
+                <label for="">ICT Subject</label>
+                <input type="number" id="ict">
+
+            </fieldset>
+
+            <fieldset>
+                <button type="submit" onclick="resultCalculate()">Calculate Result</button>
+            </fieldset>
+        </div>
+    </section>
+
+
+
+    <!-- display result section start -->
+
+    <br><br>
+
+    <section id="student-result-section" class="scontainer">
+        <h2>Student Status Section</h2>
+
+        <div id="student-card">
+
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
