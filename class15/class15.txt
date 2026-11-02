@@ -1,0 +1,11 @@
+Today's Date: 2 Nov, 2026
+
+
+
+font awesome, swiper, !important to give priority in css. codepen, ihover, 
+
+framework--
+swiper
+animate.css 
+
+wow.js to animate when scroll.

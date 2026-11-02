@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #000;
+            font-family:
+                Helvetica Neue,
+                Helvetica,
+                Arial,
+                sans-serif;
+            font-size: 14px;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rounded-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid;
+            padding: 0px 10px;
+            background-color: black;
+            border-radius: 100px;
+        }
+
+        .logo {
+            padding: 10px 10px;
+            border-radius: 50%;
+            background-color: white;
+            margin-right: 20px;
+        }
+
+        .rounded-navbar ul {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .rounded-navbar li {
+            list-style: none;
+            padding: 5px 10px;
+            border: 1px solid / white;
+        }
+
+        .rounded-navbar a,
+        p {
+            text-decoration: none;
+            color: white;
+            margin-right: 10px;
+            font-weight: 700;
+        }
+
+        .email {
+            padding: 20px 30px;
+            background-color: white;
+            border-radius: 100px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <section>
+        <div class="container animate__animated animate__bounce">
+            <div class="navbar">
+                <nav class="rounded-navbar animate__animated animate__bounce">
+                    <div class="logo">#1</div>
+                    <ul>
+                        <li><a href="">Work</a></li>
+                        <li><a href="">playground</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Resources</a></li>
+                        <li><button class="email animate__animated animate__backInUp">tanhacoding@gmail.com</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="text-center container">
+                <h3>Why Choose Us</h3>
+                <h1>We are Here to Grow Your <br> Business Exponentially</h1>
+            </div>
+            <br><br>
+            <div class="text-center container">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-start container">
+                            <div>
+                                <i class="fa-solid fa-cloud fa-2xl"></i>
+                                <br>
+                                <h4 class="my-2">Best In Industry</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, dolorum quidem.
+                                    Debitis tempore voluptates voluptas eaque maxime, aspernatur, fugiat quasi odit,
+                                    fugit eum eveniet repellat quos voluptatum sed. Earum, velit!</p>
+                            </div>
+                            <br>
+                            <div>
+                                <i class="fa-brands fa-rebel fa-2xl"></i>
+                                <br>
+                                <h4 class="my-2">Award Winning</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, dolorum quidem.
+                                    Debitis tempore voluptates voluptas eaque ma</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="container">
+                            <img src="img.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="text-start container g-1">
+                            <div class="row">
+                                <i class="fa-solid fa-hippo fa-2xl"></i>
+                                <br>
+                                <h4 class="my-2">Professional Staff</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, dolorum quidem.
+                                    Debitis tempore voluptates voluptas eaque maxime, aspernatur, fugiat quasi odit,
+                                    fugit eum eveniet repellat quos voluptatum sed. Earum, velit!</p>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <i class="fa-solid fa-tree fa-2xl"></i>
+                                <br>
+                                <h4 class="my-2">24/7 Support</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, dolorum quidem.
+                                    Debitis tempore voluptates voluptas eaque ma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <br><br><br><br>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"
+                style="background-image: url('img.jpg'); object-fit: cover; width: 100%; height:100%;">
+                <div class="container p-5 border border-3 border-warning w-100 h-400">
+
+                    <h1 class="text-success">This is a test heading</h1>
+                    <button class="button text-primary">Click Here</button>
+                </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
+
+
+    <section>
+        <div class="container">
+            <div class="text-center container">
+                <h3>Why Choose Us</h3>
+                <h1>We are Here to Grow Your <br> Business Exponentially</h1>
+            </div>
+            <br><br>
+            <div class="text-center container">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-start container">
+                            <div>
+                                <i class="fa-solid fa-cloud fa-2xl"></i>
+                                <br>
+                                <h4 class="my-2">Best In Industry</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, dolorum quidem.
+                                    Debitis tempore voluptates voluptas eaque maxime, aspernatur, fugiat quasi odit,
+                                    fugit eum eveniet repellat quos voluptatum sed. Earum, velit!</p>
+                            </div>
+                            <br>
+                            <div>
+                                <i class="fa-brands fa-rebel fa-2xl"></i>
+                                <br>
+                                <h4 class="my-2">Award Winning</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, dolorum quidem.
+                                    Debitis tempore voluptates voluptas eaque ma</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="container">
+                            <img src="img.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col wow animate__animated animate__backInUp"">
+                        <div class=" text-start container g-1">
+                        <div class="row">
+                            <i class="fa-solid fa-hippo fa-2xl"></i>
+                            <br>
+                            <h4 class="my-2 wow animate__animated animate__backInUp"">Professional Staff</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, dolorum quidem.
+                                    Debitis tempore voluptates voluptas eaque maxime, aspernatur, fugiat quasi odit,
+                                    fugit eum eveniet repellat quos voluptatum sed. Earum, velit!</p>
+                            </div>
+                            <br>
+                            <div class=" row">
+                                <i class="fa-solid fa-tree fa-2xl"></i>
+                                <br>
+                                <h4 class="my-2">24/7 Support</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, dolorum quidem.
+                                    Debitis tempore voluptates voluptas eaque ma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            direction: 'vertical',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
