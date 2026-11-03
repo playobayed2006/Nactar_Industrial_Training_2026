@@ -1,1 +1,4 @@
 Today's Date: 3 Nov, 2026
+
+learn how to start xampp local server & how to run php files using the server.
+also learned the basic structure of php language. such as echo & print() method to display output, variables, how to comment code, variable declaration.
